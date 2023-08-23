@@ -1,9 +1,10 @@
 name: hello-world
 on:
-  push: 
-    paths:
-      - '**.js'
-    branches: [main]
+  # push: 
+  #   paths:
+  #     - '**.js'
+  #   branches: [main]
+  workflow_dispatch:
 jobs:
   say-hello: 
     runs-on: ubuntu-latest
