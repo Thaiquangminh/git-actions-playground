@@ -15,11 +15,15 @@
       # - run: echo Testing your code !!!
 
 name: github-actions
+run-name: github ations running to check code
 on: 
-  push:
-    paths:
-      - '**.js'
+  # push:
+  #   paths:
+  #     - '**.js'
   # - branches: [main]
+  # pull_request:
+  #   type: [opened]
+  workflow_dispatch:
 jobs: 
   check-code:
     runs-on: ubuntu-latest
