@@ -22,10 +22,10 @@ on:
   # - branches: [main]
 jobs: 
   check-code:
-    run-on: ubuntu-latest
+    runs-on: ubuntu-latest
     steps: 
       - run: echo Testing code
   finished-code: 
-    run-on: ubuntu-latest
+    runs-on: ubuntu-latest
     steps: 
       - run: echo Tested code. Can be merged
