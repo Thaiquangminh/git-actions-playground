@@ -1,15 +1,31 @@
-name: hello-world
-on:
+# name: hello-world
+# on:
   # push: 
   #   paths:
   #     - '**.js'
   #   branches: [main]
   # workflow_dispatch:
-  pull_request:
-    type: [opened]
-jobs:
-  say-hello: 
-    runs-on: ubuntu-latest
-    steps:
+#   pull_request:
+#     type: [opened]
+# jobs:
+#   say-hello: 
+#     runs-on: ubuntu-latest
+#     steps:
       # - run: echo "TODAY=$(date +%y-%m-%d)" >> $GITHUB_ENV
-      - run: echo Testing your code !!!  
+      # - run: echo Testing your code !!!
+
+name: github-actions
+on: 
+  push:
+    paths:
+      - '**.js'
+  # - branches: [main]
+jobs: 
+  check-code:
+    run-on: ubuntu-latest
+    steps: 
+      - run: echo Testing code
+  finished-code: 
+    run-on: ubuntu-latest
+    steps: 
+      - run: echo Tested code. Can be merged
