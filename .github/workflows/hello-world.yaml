@@ -16,11 +16,11 @@
 
 name: github-actions
 run-name: github ations running to check code
-on: 
-  push:
-    paths:
-      - '**.js'
-  - branches: [main]
+on:
+#   push:
+#     paths:
+#       - '**.js'
+#   - branches: [main]
   # pull_request:
   #   type: [opened]
   workflow_dispatch:
